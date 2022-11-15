@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Sono', sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#search {
+    border:2px solid whitesmoke;
+    -moz-transform: skewX(-45deg);
+   -webkit-transform: skewX(-45deg);
+   -o-transform: skewX(-45deg);
+   -ms-transform: skewX(-45deg);
+   transform: skewX(-45deg);
+   background: gainsboro;
+}
+#search input {
+  background: none;
+  outline: 0;
+    -moz-transform: skewX(45deg);
+   -webkit-transform: skewX(45deg);
+   -o-transform: skewX(45deg);
+   -ms-transform: skewX(45deg);
+   transform: skewX(45deg);
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 20px;
+   
+}
+
+
+#search1 {
+    border:2px solid whitesmoke;
+    -moz-transform: skewX(-45deg);
+   -webkit-transform: skewX(-45deg);
+   -o-transform: skewX(-45deg);
+   -ms-transform: skewX(-45deg);
+   transform: skewX(-45deg);
+   background: red;
+   color: white;
+}
+#search1 button {
+  background: none;
+  outline: 0;
+    -moz-transform: skewX(45deg);
+   -webkit-transform: skewX(45deg);
+   -o-transform: skewX(45deg);
+   -ms-transform: skewX(45deg);
+   transform: skewX(45deg);
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 20px;
+   padding-left: 20px;
+   
+}
+
+@media(max-width:768px) {
+  #search{
+    transform: skewX(0);
+  }
+  #search input{
+    transform: skewX(0);
+  }
+  #search1{
+    transform: skewX(0);
+  }
+  #search1 button{
+    transform: skewX(0);
+  }
+}
